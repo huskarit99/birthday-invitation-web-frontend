@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Button, Carousel, ConfigProvider, Form, Input, Radio } from "antd";
 
 import InstructionImage from "../../assets/images/instruction-image.jpg";
@@ -28,6 +28,7 @@ const URL =
   "https://sheet.best/api/sheets/52f32189-fac3-4a04-adcc-f7f49c0a1c7e";
 
 export const Home = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const myRef: any = useRef(null);
   const [form] = Form.useForm();
 
@@ -52,6 +53,7 @@ export const Home = () => {
   };
 
   const onFinish = (values: any) => {
+    setIsLoading(true);
     axios
       .post(URL, {
         "Họ và tên": values?.fullName,
@@ -63,6 +65,9 @@ export const Home = () => {
       })
       .catch((e) => {
         console.log(e);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
@@ -427,6 +432,7 @@ export const Home = () => {
                       }}
                     >
                       <Button
+                        loading={isLoading}
                         htmlType="submit"
                         style={{
                           backgroundColor: "#00b96b",
