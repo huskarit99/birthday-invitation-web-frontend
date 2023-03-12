@@ -52,14 +52,6 @@ export const Home = () => {
   const executeScroll = () =>
     myRef?.current?.scrollIntoView({ behavior: "smooth" });
 
-  const contentStyle: React.CSSProperties = {
-    height: "160px",
-    color: "#fff",
-    lineHeight: "160px",
-    textAlign: "center",
-    background: "#364d79",
-  };
-
   const onFinish = (values: any) => {
     setIsLoading(true);
     axios
@@ -404,6 +396,7 @@ export const Home = () => {
                   >
                     <Form.Item
                       name="decision"
+                      initialValue={1}
                       rules={[
                         {
                           required: true,
@@ -412,7 +405,7 @@ export const Home = () => {
                       ]}
                     >
                       <Radio.Group>
-                        <Radio checked value={1} className="text-white">
+                        <Radio value={1} className="text-white">
                           Đi được nè
                         </Radio>
                         <Radio value={0} className="text-white">
@@ -425,6 +418,7 @@ export const Home = () => {
                 <div id="FORM_ITEM3970" className="ladi-element">
                   <Form.Item
                     name="people"
+                    initialValue={1}
                     rules={[
                       {
                         required: true,
@@ -435,6 +429,7 @@ export const Home = () => {
                     <Input
                       type="number"
                       size="large"
+                      min={0}
                       style={{ width: "387px" }}
                       placeholder="Số lượng người đi cùng"
                     />
