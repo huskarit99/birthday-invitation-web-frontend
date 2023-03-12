@@ -2512,10 +2512,6 @@ body {
   -webkit-animation-iteration-count: 1;
 }
 
-
-
-
-
 #SECTION51>.ladi-section-background {
     background-color: rgb(244, 240, 234);
 }
@@ -3902,8 +3898,8 @@ body {
 
 #FORM310 {
     width: 388px;
-    height: 283px;
-    top: 545px;
+    height: 200px;
+    top: 710px;
     left: 16.75px;
 }
 
@@ -3989,9 +3985,33 @@ body {
     margin: 5px;
 }
 
+#SECTION314 {
+    top: 1278px;
+    height: 726.249px;
+  }
+  
+  #SECTION314>.ladi-section-background {
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: content-box;
+    background-position: center center;
+    background-repeat: repeat;
+  }
+  
+  #SECTION314.ladi-animation {
+    animation-name: fadeInLeft;
+    -webkit-animation-name: fadeInLeft;
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+  }
+
 #SECTION315 {
     top: 1278px;
-    height: 890px;
+    height: 930px;
 }
 
 #SECTION315>.ladi-overlay {
@@ -5036,7 +5056,7 @@ body {
 
 #PARAGRAPH3951 {
   width: 378px;
-  top: 470px;
+  top: 500px;
   left: 21.75px;
 }
 
@@ -5073,7 +5093,7 @@ body {
   width: 388px;
   height: 49px;
   top: 162px;
-  left: 0px;
+  left: 292px;
 }
 
 #FORM_ITEM398 {
