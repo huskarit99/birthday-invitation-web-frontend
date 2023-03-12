@@ -1,3 +1,12 @@
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 a,
 abbr,
 acronym,
@@ -374,6 +383,12 @@ body {
   margin: 0 auto;
   width: 420px;
   overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+}
+
+.ladi-wraper::-webkit-scrollbar {
+  display: none;
 }
 
 .ladi-section {
@@ -2723,7 +2738,7 @@ body {
     top: 0px;
     left: 0px;
     background-position: center center;
-    background-image: url("../../assets/images/draw1.jpg");
+    background-image: url("../../assets/images/hb1.jpg");
 }
 
 #IMAGE42.ladi-animation>.ladi-image {
@@ -2754,7 +2769,7 @@ body {
     top: 0px;
     left: 0px;
     background-position: center center;
-    background-image: url("../../assets/images/draw2.jpg");
+    background-image: url("../../assets/images/hb2.jpg");
 }
 
 #IMAGE43.ladi-animation>.ladi-image {
@@ -2785,7 +2800,7 @@ body {
   top: 0px;
   left: 0px;
   background-position: center center;
-  background-image: url("../../assets/images/draw3.jpg");
+  background-image: url("../../assets/images/hb3.jpg");
 }
 
 #IMAGE44.ladi-animation>.ladi-image {
@@ -2816,7 +2831,7 @@ body {
   top: 0px;
   left: 0px;
   background-position: center center;
-  background-image: url("../../assets/images/draw4.jpg");
+  background-image: url("../../assets/images/sv8.jpg");
 }
 
 #IMAGE40.ladi-animation>.ladi-image {
@@ -2847,7 +2862,7 @@ body {
   top: 0px;
   left: 0px;
   background-position: center center;
-  background-image: url("../../assets/images/draw2.jpg");
+  background-image: url("../../assets/images/sv3.jpg");
 }
 
 #IMAGE47.ladi-animation>.ladi-image {
@@ -2880,7 +2895,7 @@ body {
     top: 0px;
     left: 0px;
     background-position: center center;
-    background-image: url("../../assets/images/draw6.jpg");
+    background-image: url("../../assets/images/sv1.jpg");
 }
 
 #IMAGE45.ladi-animation>.ladi-image {
@@ -2912,7 +2927,7 @@ body {
     top: 0px;
     left: 0px;
     background-position: center center;
-    background-image: url("../../assets/images/draw9.jpg");
+    background-image: url("../../assets/images/sv10.jpg");
 }
 
 #IMAGE46.ladi-animation>.ladi-image {
@@ -2944,7 +2959,7 @@ body {
 
 #HEADLINE51 {
     width: 343px;
-    top: 60px;
+    top: 35px;
     left: 0px;
 }
 
@@ -2983,7 +2998,7 @@ body {
     top: -33px;
     left: 0px;
     background-position: center center;
-    background-image: url("../../assets/images/draw5.jpg");
+    background-image: url("../../assets/images/hb5.jpg");
 }
 
 #IMAGE53.ladi-animation>.ladi-image {
@@ -3888,7 +3903,7 @@ body {
 #FORM310 {
     width: 388px;
     height: 283px;
-    top: 334.679px;
+    top: 545px;
     left: 16.75px;
 }
 
@@ -3976,7 +3991,7 @@ body {
 
 #SECTION315 {
     top: 1278px;
-    height: 680px;
+    height: 890px;
 }
 
 #SECTION315>.ladi-overlay {
@@ -5007,7 +5022,7 @@ body {
 
 #PARAGRAPH395 {
     width: 378px;
-    top: 195.679px;
+    top: 275px;
     left: 21.75px;
 }
 
@@ -5021,7 +5036,7 @@ body {
 
 #PARAGRAPH3951 {
   width: 378px;
-  top: 255.679px;
+  top: 470px;
   left: 21.75px;
 }
 
@@ -5072,7 +5087,7 @@ body {
   width: 90px;
   height: 30px;
   top: 270px;
-  left: 300px;
+  left: 292px;
 }
 
 #GALLERY399 {

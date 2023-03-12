@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { Carousel, Form, Input, Radio } from "antd";
+import { Button, Carousel, ConfigProvider, Form, Input, Radio } from "antd";
 
 import InstructionImage from "../../assets/images/instruction-image.jpg";
 import TimeLineUrl from "../../assets/images/time-line.jpg";
@@ -14,6 +14,7 @@ import TN1 from "../../assets/images/tn1.jpg";
 import TN2 from "../../assets/images/tn2.jpg";
 import TN3 from "../../assets/images/tn3.jpg";
 import TN4 from "../../assets/images/tn4.jpg";
+import TN5 from "../../assets/images/tn5.jpg";
 import TN6 from "../../assets/images/tn6.jpg";
 import TN7 from "../../assets/images/tn7.jpg";
 import TN8 from "../../assets/images/tn8.jpg";
@@ -31,7 +32,7 @@ const URL = "http://localhost:5001/api/user-controller/user";
 
 export const Home = () => {
   const myRef: any = useRef(null);
-  const TNs: any[] = [TN1, TN2, TN3, TN4, TN6];
+  const TNs: any[] = [TN1, TN2, TN3, TN4, TN6, TN7, TN8, TN9];
   const TN_images: any[] = TNs.map((tn) => (
     <div>
       <img src={tn} alt="" style={{ height: "240px", width: "420px" }} />
@@ -97,49 +98,49 @@ export const Home = () => {
           ></div>
         </div>
 
-        <div id="SECTION3" className="ladi-section ladi-animation-hidden">
+        <div id="SECTION3" className="ladi-section">
           <div
             className="ladi-section-background"
             style={{ backgroundImage: `url(${TimeLine ?? ""})` }}
           ></div>
         </div>
 
-        <div id="SECTION4" className="ladi-section ladi-animation-hidden">
+        <div id="SECTION4" className="ladi-section">
           <div
             className="ladi-section-background"
             style={{ backgroundImage: `url(${Statistic})` }}
           ></div>
         </div>
 
-        <div id="SECTION5" className="ladi-section ladi-animation-hidden">
+        <div id="SECTION5" className="ladi-section">
           <div
             className="ladi-section-background"
             style={{ backgroundImage: `url(${StoryCreation})` }}
           ></div>
         </div>
 
-        <div id="SECTION6" className="ladi-section ladi-animation-hidden">
+        <div id="SECTION6" className="ladi-section">
           <div
             className="ladi-section-background"
             style={{ backgroundImage: `url(${Spirit})` }}
           ></div>
         </div>
 
-        <div id="SECTION7" className="ladi-section ladi-animation-hidden">
+        <div id="SECTION7" className="ladi-section">
           <div
             className="ladi-section-background"
             style={{ backgroundImage: `url(${Journey3Year})` }}
           ></div>
         </div>
 
-        <div id="SECTION8" className="ladi-section ladi-animation-hidden">
+        <div id="SECTION8" className="ladi-section">
           <div
             className="ladi-section-background"
             style={{ backgroundImage: `url(${Journey7Year})` }}
           ></div>
         </div>
 
-        <div id="SECTION9" className="ladi-section ladi-animation-hidden">
+        <div id="SECTION9" className="ladi-section">
           <div
             className="ladi-section-background"
             style={{ backgroundImage: `url(${Currently})` }}
@@ -235,7 +236,7 @@ export const Home = () => {
                       textJustify: "inter-word",
                     }}
                   >
-                    ẢNH TÌNH NGUYỆN CỦA BỌN MÌNH
+                    NHỮNG KHOẢNH KHẮC TRỌN VẸN CỦA CHÚNG MÌNH
                   </h3>
                 </div>
               </div>
@@ -283,21 +284,28 @@ export const Home = () => {
             </div>
             <div id="PARAGRAPH394" className="ladi-element">
               <div className="ladi-paragraph">
-                Hãy sắp xếp thời gian trở về cùng Sắc Màu thưởng thức tiệc
-                teabreak nho nhỏ, mình cùng chuyện trò và ôn lại kỷ niệm nhé.
+                Hãy sắp xếp thời gian đến chung vui cùng Sắc Màu trong ngày Kỷ
+                niệm 10 năm đặc biệt này nhé! Chúng ta sẽ cùng nhau ôn lại những
+                kỷ niệm đẹp, thưởng thức teabreak nho nhỏ cùng nhau, xem lại
+                những đóng góp tuyệt vời đã cùng nhau thực hiện trong 1 thập kỷ
+                qua.
                 <br />
               </div>
             </div>
             <div id="PARAGRAPH395" className="ladi-element">
               <div className="ladi-paragraph">
-                Buổi họp mặt sẽ trọn vẹn và ý nghĩa hơn khi có sự tham gia của
-                Bạn.
+                Buổi họp mặt sẽ ý nghĩa trọn vẹn, đông đầy cảm cúc khi có sự
+                tham dự của Anh/Chị. Tất cả chúng ta sẽ cùng gặp nhau tại Buổi
+                Họp mặt Kỷ niệm 10 năm thành lập Tổ chức Xã hội Sắc Màu với chủ
+                đề: DẤU ẤN MỘT THẬP KỶ - VÌ CUỘC SỐNG TỐT ĐẸP HƠN” diễn ra tại
+                EDENSTAR SAIGON HOTEL - Số 38 Bùi Thị Xuân, P. Phạm Ngũ Lão,
+                Quận 1, TP. HCM.
                 <br />
               </div>
             </div>
             <div id="PARAGRAPH3951" className="ladi-element">
               <div className="ladi-paragraph">
-                Hãy xác nhận tham gia để Sắc Màu chuẩn bị cho “Ngày trở về” thật
+                Hãy xác nhận tham gia để Sắc Màu chuẩn bị cho “Ngày hội tụ” thật
                 chu đáo nhé!
                 <br />
               </div>
@@ -380,14 +388,22 @@ export const Home = () => {
                       },
                     ]}
                   >
-                    <Radio.Group>
-                      <Radio checked value={1} className="text-white">
-                        Đi được nè
-                      </Radio>
-                      <Radio value={0} className="text-white">
-                        Bận mất rồi
-                      </Radio>
-                    </Radio.Group>
+                    <ConfigProvider
+                      theme={{
+                        token: {
+                          colorPrimary: "#00b96b",
+                        },
+                      }}
+                    >
+                      <Radio.Group>
+                        <Radio checked value={1} className="text-white">
+                          Đi được nè
+                        </Radio>
+                        <Radio value={0} className="text-white">
+                          Bận mất rồi
+                        </Radio>
+                      </Radio.Group>
+                    </ConfigProvider>
                   </Form.Item>
                 </div>
                 <div id="FORM_ITEM398" className="ladi-element">
@@ -409,11 +425,24 @@ export const Home = () => {
                   </Form.Item>
                 </div>
                 <div id="FORM_ITEM399" className="ladi-element">
-                  <div className="ladi-form-item-container">
-                    <button className="bg-green-600 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded">
-                      Xác nhận
-                    </button>
-                  </div>
+                  <ConfigProvider
+                    theme={{
+                      token: {
+                        colorPrimary: "#00b96b",
+                      },
+                    }}
+                  >
+                    <Button
+                      style={{
+                        backgroundColor: "#00b96b",
+                        borderColor: "#00b96b",
+                        color: "white",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Xác nhận{" "}
+                    </Button>
+                  </ConfigProvider>
                 </div>
               </Form>
             </div>
