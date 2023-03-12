@@ -19,7 +19,6 @@ b,
 big,
 blockquote,
 body,
-button,
 canvas,
 caption,
 center,
@@ -4011,7 +4010,7 @@ body {
 
 #SECTION315 {
     top: 1278px;
-    height: 930px;
+    height: 950px;
 }
 
 #SECTION315>.ladi-overlay {
@@ -5092,7 +5091,7 @@ body {
 #FORM_ITEM3971 {
   width: 100px;
   height: 40px;
-  top: 162px;
+  top: 172px;
   left: 270px;
 }
 
@@ -5439,4 +5438,18 @@ body {
 
 #GALLERY400 .ladi-gallery .ladi-gallery-control-item[data-index="34"] {
     background-image: url("https://w.ladicdn.com/s400x400/5f8d66c38efc2554cb6c083a/dat09686-20221004042254-d_7lc.jpg");
+}
+
+.ant-btn-default, .ant-btn-primary {
+    background-color: #00b96b !important;
+    border-color: #00b96b !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.ant-btn-default:hover, .ant-btn-primary:hover {
+    background-color: white !important;
+    border-color: #00b96b !important;
+    color: #00b96b !important;
+    font-weight: bold !important;
 }

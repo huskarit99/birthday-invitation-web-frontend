@@ -1,6 +1,14 @@
 import axios from "axios";
 import { useRef, useState } from "react";
-import { Button, Carousel, ConfigProvider, Form, Input, Radio } from "antd";
+import {
+  Button,
+  Carousel,
+  ConfigProvider,
+  Form,
+  Input,
+  Radio,
+  Modal,
+} from "antd";
 
 import InstructionImage from "../../assets/images/instruction-image.jpg";
 import TimeLineUrl from "../../assets/images/time-line.jpg";
@@ -62,9 +70,19 @@ export const Home = () => {
       })
       .then((response) => {
         form.resetFields();
+        Modal.success({
+          title: "Bạn đã xác nhận thành công !!!",
+          content:
+            "Cảm ơn bạn. Sắc Màu đã nhận được câu trả lời của bạn rồi nhé!",
+        });
       })
       .catch((e) => {
         console.log(e);
+        Modal.error({
+          title: "Bạn chưa xác nhận thành công !!!",
+          content:
+            "Có thể do ảnh hưởng từ đường truyển mạng. Phiền bạn giúp Sắc Màu kiểm tra và đăng ký lại. Sắc Màu xin cảm ơn nhé!",
+        });
       })
       .finally(() => {
         setIsLoading(false);
@@ -424,26 +442,9 @@ export const Home = () => {
                 </div>
                 <div id="FORM_ITEM3971" className="ladi-element">
                   <Form.Item>
-                    <ConfigProvider
-                      theme={{
-                        token: {
-                          colorPrimary: "#00b96b",
-                        },
-                      }}
-                    >
-                      <Button
-                        loading={isLoading}
-                        htmlType="submit"
-                        style={{
-                          backgroundColor: "#00b96b",
-                          borderColor: "#00b96b",
-                          color: "white",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Xác nhận{" "}
-                      </Button>
-                    </ConfigProvider>
+                    <Button loading={isLoading} htmlType="submit">
+                      Xác nhận{" "}
+                    </Button>
                   </Form.Item>
                 </div>
               </Form>
