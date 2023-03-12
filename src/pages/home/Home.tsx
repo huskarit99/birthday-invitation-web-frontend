@@ -396,7 +396,7 @@ export const Home = () => {
                   >
                     <Form.Item
                       name="decision"
-                      initialValue={0}
+                      initialValue={1}
                       rules={[
                         {
                           required: true,
@@ -418,7 +418,7 @@ export const Home = () => {
                 <div id="FORM_ITEM3970" className="ladi-element">
                   <Form.Item
                     name="people"
-                    initialValue={1}
+                    initialValue={0}
                     rules={[
                       {
                         required: true,
